@@ -47,7 +47,9 @@ public class getInput {
         }
             while (!stack.isEmpty()) {
                 System.out.println(stack.pop());
+                if (!stack.isEmpty()){
                 stack.setCurr(stack.getCurr().getPrev());
+                }
             }
         scn.close();
         }
